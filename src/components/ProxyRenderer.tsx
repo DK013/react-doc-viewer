@@ -50,7 +50,7 @@ type ContentsProps = {
       );
     } else {
       if (CurrentRenderer) {
-        return <CurrentRenderer mainState={state} />;
+        return <CurrentRenderer mainstate={state} />;
       } else if (CurrentRenderer === undefined) {
         return null;
       } else {

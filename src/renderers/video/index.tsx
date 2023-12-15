@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { DocRenderer } from "../..";
 
-const VideoRenderer: DocRenderer = ({ mainState: { currentDocument } }) => {
+const VideoRenderer: DocRenderer = ({ mainstate: { currentDocument } }) => {
   if (!currentDocument) return null;
 
   return (

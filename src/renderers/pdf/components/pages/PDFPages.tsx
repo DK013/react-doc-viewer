@@ -11,12 +11,12 @@ import PDFSinglePage from "./PDFSinglePage";
 
 const PDFPages: FC<{}> = () => {
   const {
-    state: { mainState, paginated },
+    state: { mainstate, paginated },
     dispatch,
   } = useContext(PDFContext);
   const { t } = useTranslation();
 
-  const currentDocument = mainState?.currentDocument || null;
+  const currentDocument = mainstate?.currentDocument || null;
 
   useEffect(() => {
     dispatch(setNumPages(initialPDFState.numPages));

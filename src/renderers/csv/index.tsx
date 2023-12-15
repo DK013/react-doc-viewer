@@ -5,7 +5,7 @@ import { DocRenderer } from "../..";
 import { textFileLoader } from "../../utils/fileLoaders";
 
 const CSVRenderer: DocRenderer = ({
-  mainState: { currentDocument, config },
+  mainstate: { currentDocument, config },
 }) => {
   const [rows, setRows] = useState<string[][]>([]);
 

@@ -8,7 +8,7 @@ import { parseTIFF } from "./tiffToCanvas";
 
 const TIFFRenderer: DocRenderer = (props) => {
   const {
-    mainState: { currentDocument },
+    mainstate: { currentDocument },
   } = props;
   const { t } = useTranslation();
 

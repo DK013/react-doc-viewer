@@ -66,7 +66,7 @@ export interface IDocument {
 }
 
 export interface DocRendererProps {
-  mainState: IMainState;
+  mainstate: IMainState;
 }
 
 export interface DocRenderer extends FC<PropsWithChildren<DocRendererProps>> {

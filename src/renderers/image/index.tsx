@@ -4,7 +4,7 @@ import { DocRenderer } from "../..";
 
 const ImageProxyRenderer: DocRenderer = (props) => {
   const {
-    mainState: { currentDocument },
+    mainstate: { currentDocument },
     children,
   } = props;
 

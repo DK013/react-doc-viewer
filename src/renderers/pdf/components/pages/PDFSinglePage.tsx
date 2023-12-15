@@ -11,11 +11,11 @@ interface Props {
 
 const PDFSinglePage: FC<Props> = ({ pageNum }) => {
   const {
-    state: { mainState, paginated, zoomLevel, numPages, currentPage },
+    state: { mainstate, paginated, zoomLevel, numPages, currentPage },
   } = useContext(PDFContext);
   const { t } = useTranslation();
 
-  const rendererRect = mainState?.rendererRect || null;
+  const rendererRect = mainstate?.rendererRect || null;
 
   const _pageNum = pageNum || currentPage;
 

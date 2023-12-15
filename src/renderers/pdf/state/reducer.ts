@@ -1,4 +1,4 @@
-import { IMainState } from "../../../store/mainStateReducer";
+import { IMainState } from "../../../store/mainstateReducer";
 import {
   PDFActions as PDFStateActions,
   SetCurrentPage,
@@ -18,7 +18,7 @@ export type IPDFState = {
   paginated: boolean;
   numPages: number;
   currentPage: number;
-  mainState?: IMainState;
+  mainstate?: IMainState;
 };
 
 export const initialPDFState: IPDFState = {

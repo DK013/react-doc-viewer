@@ -5,7 +5,7 @@ import React, {
   PropsWithChildren,
   useReducer,
 } from "react";
-import { IMainState } from "../../../store/mainStateReducer";
+import { IMainState } from "../../../store/mainstateReducer";
 import { PDFActions } from "./actions";
 import {
   initialPDFState,
@@ -19,22 +19,22 @@ const PDFContext = createContext<{
   dispatch: Dispatch<PDFActions>;
 }>({ state: initialPDFState, dispatch: () => null });
 
-const PDFProvider: FC<PropsWithChildren<{ mainState: IMainState }>> = ({
+const PDFProvider: FC<PropsWithChildren<{ mainstate: IMainState }>> = ({
   children,
-  mainState,
+  mainstate,
 }) => {
   const [state, dispatch] = useReducer<PDFStateReducer>(reducer, {
     ...initialPDFState,
     defaultZoomLevel:
-      mainState.config?.pdfZoom?.defaultZoom ??
+      mainstate.config?.pdfZoom?.defaultZoom ??
       initialPDFState.defaultZoomLevel,
     zoomLevel:
-      mainState.config?.pdfZoom?.defaultZoom ?? initialPDFState.zoomLevel,
-    zoomJump: mainState.config?.pdfZoom?.zoomJump ?? initialPDFState.zoomJump,
-    paginated: mainState.config?.pdfVerticalScrollByDefault
+      mainstate.config?.pdfZoom?.defaultZoom ?? initialPDFState.zoomLevel,
+    zoomJump: mainstate.config?.pdfZoom?.zoomJump ?? initialPDFState.zoomJump,
+    paginated: mainstate.config?.pdfVerticalScrollByDefault
       ? false
       : initialPDFState.paginated,
-    mainState,
+    mainstate,
   });
 
   return (

@@ -18,7 +18,7 @@ const PDFControls: FC<{}> = () => {
   const { t } = useTranslation();
   const {
     state: {
-      mainState,
+      mainstate,
       paginated,
       zoomLevel,
       numPages,
@@ -28,7 +28,7 @@ const PDFControls: FC<{}> = () => {
     dispatch,
   } = useContext(PDFContext);
 
-  const currentDocument = mainState?.currentDocument || null;
+  const currentDocument = mainstate?.currentDocument || null;
 
   return (
     <Container id="pdf-controls">

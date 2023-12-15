@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { DocRenderer, IStyledProps } from "../..";
 import { dataURLFileLoader } from "../../utils/fileLoaders";
 
-const HTMLRenderer: DocRenderer = ({ mainState: { currentDocument } }) => {
+const HTMLRenderer: DocRenderer = ({ mainstate: { currentDocument } }) => {
   useEffect(() => {
     const b64String = currentDocument?.fileData as string;
     const bodyBase64 = b64String?.replace("data:text/html;base64,", "") || "";

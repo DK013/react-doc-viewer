@@ -10,9 +10,9 @@ import "react-pdf/dist/esm/Page/TextLayer.css";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
-const PDFRenderer: DocRenderer = ({ mainState }) => {
+const PDFRenderer: DocRenderer = ({ mainstate }) => {
   return (
-    <PDFProvider mainState={mainState}>
+    <PDFProvider mainstate={mainstate}>
       <Container id="pdf-renderer" data-testid="pdf-renderer">
         <PDFControls />
         <PDFPages />
