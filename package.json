@@ -1,16 +1,16 @@
 {
-  "name": "@cyntler/react-doc-viewer",
-  "version": "1.14.1",
+  "name": "@xelcior/react-doc-viewer",
+  "version": "1.14.2",
   "description": "File viewer for React.",
-  "author": "Matthew Mogford / Damian Cyntler",
+  "author": "Matthew Mogford / Damian Cyntler / Deep Chakraborty",
   "keywords": [
     "reactjs",
     "file-viewer"
   ],
   "license": "Apache License 2.0",
-  "homepage": "https://cyntler.github.io/react-doc-viewer",
+  "homepage": "https://dk013.github.com/react-doc-viewer",
   "repository": {
-    "url": "https://github.com/cyntler/react-doc-viewer"
+    "url": "https://github.com/dk013/react-doc-viewer"
   },
   "files": [
     "dist/**"
@@ -39,7 +39,7 @@
     "mustache": "^4.2.0",
     "papaparse": "^5.4.1",
     "react-pdf": "7.5.0",
-    "styled-components": "^6.0.8"
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@babel/core": "^7.23.0",
